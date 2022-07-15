@@ -1,5 +1,5 @@
-const Migrations = artifacts.require("Migrations");
+const nft = artifacts.require("nft_contract");
 
 module.exports = function (deployer) {
-  deployer.deploy(Migrations);
+  deployer.deploy(nft, "string");
 };
